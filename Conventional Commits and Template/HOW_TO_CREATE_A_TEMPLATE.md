@@ -34,7 +34,7 @@ touch .mytemplate
 vim .mytemplate
 ```
 
-5. In our case we will use the "_Conventional Commits v1.0.0_" format:
+4. In our case we will use the "_Conventional Commits v1.0.0_" format:
 
 ```bash
 <type>[optional scope]: <description>
