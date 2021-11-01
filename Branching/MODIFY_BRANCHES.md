@@ -1,8 +1,10 @@
 # How to modify branches
+### [Brian Coyago](https://github.com/Kanicbay) - Computer Science
+
 ## Introduction
 Once we've created our branches we always need to do some modifications. For instance, we already finish a stable version of our product. So, we'll need to remove the hotfix branch or maybe develop branch. That's why the next commands will help with this.
 
-<img src="https://www.jquery-az.com/wp-content/uploads/2018/06/2.0_2-Git-change-branch-loc.png" width="750" height="280"/></img>
+<img src="https://www.jquery-az.com/wp-content/uploads/2018/06/2.0_2-Git-change-branch-loc.png" width="750" height="200"/></img>
 
 ---
 
