@@ -78,6 +78,12 @@ footers other than BREAKING CHANGE: <description> may be provided and follow a c
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
   ```
 
-
+---------
+  ## Bibliography
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+-------
+ ### Author
+  Ivanna Cevallos
+  Student Computer Science EPN
 
 
