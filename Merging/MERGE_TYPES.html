@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>*** THEME: MERGE TYPES***</title>
+		<style>
+			body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1, h2, h3 {
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.remark-slide-content h1 { font-size: 3em; }
+.remark-slide-content h2 { font-size: 2em; }
+.remark-slide-content h3 { font-size: 1.6em; }
+.footnote {
+	position: absolute;
+	bottom: 3em;
+}
+li p { line-height: 1.25em; }
+.red { color: #fa0000; }
+.large { font-size: 2em; }
+a, a > code {
+	color: rgb(249, 38, 114);
+	text-decoration: none;
+}
+code {
+	background: none repeat scroll 0 0 #F8F8FF;
+  border: 1px solid #DEDEDE;
+  border-radius: 3px 	;
+  padding: 0 0.2em;
+}
+.remark-code, .remark-inline-code { font-family: "Bitstream Vera Sans Mono", "Courier", monospace; }
+.remark-code-line-highlighted     { background-color: #373832; }
+.pull-left {
+	float: left;
+	width: 47%;
+}
+.pull-right {
+	float: right;
+	width: 47%;
+}
+.pull-right ~ p {
+	clear: both;
+}
+#slideshow .slide .content code {
+	font-size: 0.8em;
+}
+#slideshow .slide .content pre code {
+	font-size: 0.9em;
+	padding: 15px;
+}
+.main-title, .title {
+	background: #272822;
+	color: #777872;
+	text-shadow: 0 0 20px #333;
+}
+.title h1, .title h2, .main-title h1, .main-title h2 {
+	color: #f3f3f3;
+	line-height: 0.8em;
+}
+/* Custom */
+.remark-code {
+	display: block;
+	padding: 0.5em;
+}
+
+		</style>
+	</head>
+	<body>
+		<textarea id="source">
+# *** THEME: MERGE TYPES***  
+
+###  *INGENIERÍA EN SISTEMAS DE LA INFORMACIÓN*  
+
+### *KEVIN ENDARA*
+
+### - *FACEBOOK:* 
+
+#### [ https://www.facebook.com/kevin.endara.75](https://www.facebook.com/kevin.endara.75)
+
+![logo](https://www.darwinfoundation.org/images/fcd/uce.png)
+
+
+---
+
+## **MERGE TYPES**
+Git provides various methods to merge different commits into a base commit, we have two main methods:
+
+* Fast Forward
+* 3-way
+
+
+## *FAST FORWARD MERGE*
+
+> A fast forward merge may happen when there is a linear process from the end of the current branch to the target branch. Instead of “actually” merging the branches, all Git has to do to integrate the histories is move the end of the current branch to the end of the target branch.
+
+![Fast forward explication](https://wac-cdn.atlassian.com/dam/jcr:d90f2536-7951-4e5e-ab79-f45a502fb4c8/03-04%20Fast%20forward%20merge.svg?cdnVersion=45)
+
+---
+
+## *3-WAY MERGE*
+
+> 3-way merges use a specific commit to join two histories. This merge gets its name from the fact that Git uses three commits to generate the merge commit: the two ends of the branch and its common predecessor.
+
+![3-way representation](https://wac-cdn.atlassian.com/dam/jcr:91aece4a-8fa0-4fc3-bae9-69d51932f104/05-06%20Fast%20forward%20merge.svg?cdnVersion=45)
+
+
+		</textarea>
+		<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+		<script>
+			var slideshow = remark.create();
+		</script>
+		<script></script>
+	</body>
+</html>

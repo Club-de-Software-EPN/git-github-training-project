@@ -1,6 +1,17 @@
 # How to create a new branch
+## Name:Antonio Villegas
+
+### Instagram: [@antoniio.vill](https://www.instagram.com/antoniio.vill/)
+### Github:   [@AntonioVillegas](https://github.com/AntonioVillegas13)
+
+---
+
 ## Introduction
 In this section there are some commands that allows to create branch and view branches that already exist in the repository by local or remote.
+
+![imagen referencia de las ramas en git](https://miro.medium.com/max/724/1*dstkL37zdzOg97nhNVUvNQ.png)
+
+---
 
 ## Creating a Branch
 In order to create a new branch with the console. We can use this command.
@@ -20,6 +31,9 @@ git branch
 ````
 git branch -r
 ````
+
+---
+
 - Local and remote branches
 
 If we need to see all the branches local and remote we must to use this command.
