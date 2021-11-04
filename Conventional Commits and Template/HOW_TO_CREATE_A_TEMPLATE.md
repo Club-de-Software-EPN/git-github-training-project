@@ -1,7 +1,7 @@
 # How to create a template for commits
 
 ### Ginno Taimal
-### Ingeniería de Software
+### *Software Engineering student at [Escuela Politécnica Nacional](https://www.epn.edu.ec)* 🇪🇨
 ### **Instagram:** [@ginno_taimal](https://www.instagram.com/ginno_taimal/)
 ### **GitHub:** [@SWATrock](https://github.com/SWATrock)
 
