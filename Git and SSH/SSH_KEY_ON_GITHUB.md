@@ -1,9 +1,11 @@
 # SSH KEY ON GITHUB
-Samir Zurita
----
-### **ACTIVATE SSH KEY ON GITHUB**
+**Samir Zurita**
 
-![SSH ON TERMINAL](https://blog.desdelinux.net/wp-content/uploads/2020/06/ssh-logo.jpg)
+![SSH ON TERMINAL](https://lh3.googleusercontent.com/pH5F_x-w_KCLIL-LgXX7EGpJMHKfUshKIQkxaqppd6MfxON-8IyCqi91t0RW9M3qzQ)
+
+---
+
+### **ACTIVATE SSH KEY ON GITHUB**
 
 To activate the SSH key on Github, it is necessary to locate the folder in wich the generated SSH keys are found.
 
@@ -26,6 +28,9 @@ we enter the folder with the command:
 ```
 cd .ssh/
 ```
+
+---
+
 Inside the directory we will find a private key and a public key, these will look like this: 
 
 - `id_ed25519`
@@ -40,13 +45,17 @@ cat id:ed25519.pub
 ```
 Once the command is executed, the public key will be displayed, which will be used in github. 
 
+---
+
 #### **ACTIVATION ON GITHUB**
 
-![Github SSH](https://andalinux.files.wordpress.com/2019/01/github-ssh.jpg)
+![Github SSH](https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU)
+
+---
 
 To activate the public key on Github, we must follow these steps: 
 
-1. Login to [Github](github.com)
+1. Login to [Github](https://github.com)
 2. Go to settings
 3. Find the section of `SSH and GPG keys`
 4. Inside `SSH and GPG keys` put in `Add new SSH Key`

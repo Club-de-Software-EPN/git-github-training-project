@@ -1,5 +1,10 @@
-# 
-Samir Zurita
+# ACTIVATE PRIVATE KEY
+**Samir Zurita**
+
+
+![PRIVATE KEY](https://khinnit.com.ve/wp-content/uploads/2017/06/ssh-key.jpg)
+
+
 ---
 
 To activate our private key within our computer, we must enter the following command: 
