@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"><title>Git Commands.md</title>
+<style>
+</style>
+</head>
+<body id="preview">
+<h1 class="code-line" data-line-start=0 data-line-end=1><a id="Welcome_to_Conventional_Commits_100_0"></a>Welcome to Conventional Commits 1.0.0</h1>
+<h2 class="code-line" data-line-start=1 data-line-end=3><a id="Welcomehttpswwwicegifcomwpcontentuploadsicegif87gif_1"></a><img src="https://www.icegif.com/wp-content/uploads/icegif-87.gif" alt="Welcome"></h2>
+<h3 class="code-line" data-line-start=3 data-line-end=4><a id="Maybe_you_are_asking_yourself_what_are_Conventional_Commits_and_why_do_you_need_to_learn_them_3"></a>Maybe you are asking yourself what are Conventional Commits and why do you need to learn them.</h3>
+<p class="has-line-data" data-line-start="4" data-line-end="5"><img src="https://cdn.dribbble.com/users/60517/screenshots/787426/questions.gif" alt="What is it"></p>
+<h3 class="code-line" data-line-start=5 data-line-end=6><a id="What_is_a_Convetional_Commit_5"></a>What is a Convetional Commit?</h3>
+<p class="has-line-data" data-line-start="6" data-line-end="7">The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of.</p>
+<hr>
+<h3 class="code-line" data-line-start=9 data-line-end=10><a id="Why_use_Convetional_Commit_9"></a>Why use Convetional Commit</h3>
+<ol>
+<li class="has-line-data" data-line-start="10" data-line-end="11">Automatically generating CHANGELOGs.</li>
+<li class="has-line-data" data-line-start="11" data-line-end="12">Automatically determining a semantic version bump (based on the types of commits landed).</li>
+<li class="has-line-data" data-line-start="12" data-line-end="14">Making it easier for people to contribute to your projects, by allowing them to explore a more structured commit history.<br>
+<img src="https://cdn.dribbble.com/users/2103338/screenshots/7155620/media/65aeca6c38214e96cd6bfedbca9b843e.gif" alt="What is it"></li>
+</ol>
+<hr>
+<h3 class="code-line" data-line-start=16 data-line-end=17><a id="The_commit_message_should_be_structured_as_follows_16"></a>The commit message should be structured as follows:</h3>
+<pre><code class="has-line-data" data-line-start="18" data-line-end="24">&lt;type&gt;[optional scope]: &lt;description&gt;
+
+[optional body]
+
+[optional footer(s)]
+</code></pre>
+<hr>
+<h3 class="code-line" data-line-start=26 data-line-end=27><a id="Types_26"></a>Types</h3>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Type</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fix</td>
+<td>a commit of the type fix patches a bug in your codebase</td>
+</tr>
+<tr>
+<td>feat</td>
+<td>a commit of the type feat introduces a new feature to the codebase</td>
+</tr>
+<tr>
+<td>build</td>
+<td>Changes that affect the build system or external dependencies</td>
+</tr>
+<tr>
+<td>docs</td>
+<td>Documentation only changes</td>
+</tr>
+<tr>
+<td>ci</td>
+<td>Changes to our CI configuration files and scripts</td>
+</tr>
+<tr>
+<td>refactor</td>
+<td>A code change that neither fixes a bug nor adds a feature</td>
+</tr>
+<tr>
+<td>style</td>
+<td>Changes that do not affect the meaning of the code</td>
+</tr>
+<tr>
+<td>test</td>
+<td>Adding missing tests or correcting existing tests</td>
+</tr>
+<tr>
+<td>perf</td>
+<td>A code change that improves performance</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 class="code-line" data-line-start=40 data-line-end=41><a id="Scope_40"></a>Scope</h3>
+<p class="has-line-data" data-line-start="41" data-line-end="42">The scope should be the name of the npm package affected (as perceived by the person reading the changelog generated from commit messages.</p>
+<p class="has-line-data" data-line-start="43" data-line-end="44">The following is the list of supported scopes:</p>
+<p class="has-line-data" data-line-start="45" data-line-end="52">-animations<br>
+-common<br>
+-compiler<br>
+-compiler-cli<br>
+-core<br>
+-elements<br>
+-forms</p>
+<hr>
+<h3 class="code-line" data-line-start=54 data-line-end=55><a id="Body_54"></a>Body</h3>
+<p class="has-line-data" data-line-start="55" data-line-end="56">Just as in the subject, use the imperative, present tense: “change” not “changed” nor “changes”.</p>
+<hr>
+<h3 class="code-line" data-line-start=58 data-line-end=59><a id="Footer_58"></a>Footer</h3>
+<p class="has-line-data" data-line-start="59" data-line-end="60">footers other than BREAKING CHANGE: &lt;description&gt; may be provided and follow a convention similar to git trailer format.</p>
+<hr>
+<h3 class="code-line" data-line-start=62 data-line-end=63><a id="Example_62"></a>Example</h3>
+<p class="has-line-data" data-line-start="63" data-line-end="64"><img src="https://jonmgomes.com/wp-content/uploads/2020/03/Liquid-Lightbulb-Animation-V2-800x600-1.gif" alt="Example"></p>
+<h4 class="code-line" data-line-start=65 data-line-end=66><a id="Commit_message_with_scope_65"></a>Commit message with scope</h4>
+<pre><code class="has-line-data" data-line-start="67" data-line-end="69">feat(lang): add polish language
+</code></pre>
+<h4 class="code-line" data-line-start=69 data-line-end=70><a id="Commit_message_with_no_body_69"></a>Commit message with no body</h4>
+<pre><code class="has-line-data" data-line-start="71" data-line-end="73">docs: correct spelling of CHANGELOG
+</code></pre>
+<h4 class="code-line" data-line-start=73 data-line-end=74><a id="Commit_message_with_description_and_breaking_change_footer_73"></a>Commit message with description and breaking change footer</h4>
+<pre><code class="has-line-data" data-line-start="75" data-line-end="79">feat: allow provided config object to extend other configs
+
+BREAKING CHANGE: `extends` key in config file is now used for extending other config files
+</code></pre>
+<hr>
+<h2 class="code-line" data-line-start=81 data-line-end=82><a id="Bibliography_81"></a>Bibliography</h2>
+<h2 class="code-line" data-line-start=82 data-line-end=84><a id="Conventional_Commitshttpswwwconventionalcommitsorgenv100_82"></a><a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a></h2>
+<h3 class="code-line" data-line-start=84 data-line-end=85><a id="Author_84"></a>Author</h3>
+<p class="has-line-data" data-line-start="85" data-line-end="87">Ivanna Cevallos<br>
+Student Computer Science EPN</p>
+</body></html>

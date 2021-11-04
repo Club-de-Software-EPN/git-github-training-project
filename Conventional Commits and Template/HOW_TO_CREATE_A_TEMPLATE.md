@@ -1,8 +1,19 @@
 # How to create a template for commits
 
+### Ginno Taimal
+### *Software Engineering student at [Escuela Politécnica Nacional](https://www.epn.edu.ec)* 🇪🇨
+### **Instagram:** [@ginno_taimal](https://www.instagram.com/ginno_taimal/)
+### **GitHub:** [@SWATrock](https://github.com/SWATrock)
+
+---
+
+## ÍNDICE:
+
 1. [What is a template?](#topic01)
 2. [Create a template](#topic02)
 3. [Documentation](#topic03)
+
+---
 
 ## What is a template? <a name="topic01"></a>
 
@@ -11,6 +22,8 @@
 </p>
 
 Document or file that contains all the lines, proportions, sizes, typography, structure, colors and indications necessary that allows to orient, port or build, a predefined design or scheme.
+
+---
 
 ## Create a template <a name="topic02"></a>
 
@@ -34,6 +47,8 @@ touch .mytemplate
 vim .mytemplate
 ```
 
+---
+
 4. In our case we will use the "_Conventional Commits v1.0.0_" format:
 
 ```bash
@@ -51,6 +66,8 @@ git config --global commit.template .mytemplate
 ```
 
 6. Ready, our template is configured. Now when you make a commit with the `git commit` command, it will display the format that we established.
+
+---
 
 ## Documentation <a name="topic03"></a>
 

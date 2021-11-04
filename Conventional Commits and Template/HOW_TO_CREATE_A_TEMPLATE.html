@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>How to create a template for commits</title>
+		<style>
+			body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1, h2, h3 {
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.remark-slide-content h1 { font-size: 3em; }
+.remark-slide-content h2 { font-size: 2em; }
+.remark-slide-content h3 { font-size: 1.6em; }
+.footnote {
+	position: absolute;
+	bottom: 3em;
+}
+li p { line-height: 1.25em; }
+.red { color: #fa0000; }
+.large { font-size: 2em; }
+a, a > code {
+	color: rgb(249, 38, 114);
+	text-decoration: none;
+}
+code {
+	background: none repeat scroll 0 0 #F8F8FF;
+  border: 1px solid #DEDEDE;
+  border-radius: 3px 	;
+  padding: 0 0.2em;
+}
+.remark-code, .remark-inline-code { font-family: "Bitstream Vera Sans Mono", "Courier", monospace; }
+.remark-code-line-highlighted     { background-color: #373832; }
+.pull-left {
+	float: left;
+	width: 47%;
+}
+.pull-right {
+	float: right;
+	width: 47%;
+}
+.pull-right ~ p {
+	clear: both;
+}
+#slideshow .slide .content code {
+	font-size: 0.8em;
+}
+#slideshow .slide .content pre code {
+	font-size: 0.9em;
+	padding: 15px;
+}
+.main-title, .title {
+	background: #272822;
+	color: #777872;
+	text-shadow: 0 0 20px #333;
+}
+.title h1, .title h2, .main-title h1, .main-title h2 {
+	color: #f3f3f3;
+	line-height: 0.8em;
+}
+/* Custom */
+.remark-code {
+	display: block;
+	padding: 0.5em;
+}
+
+		</style>
+	</head>
+	<body>
+		<textarea id="source">
+# How to create a template for commits
+
+### Ginno Taimal
+### *Software Engineering student at [Escuela Politécnica Nacional](https://www.epn.edu.ec)*
+### **Instagram:** [@ginno_taimal](https://www.instagram.com/ginno_taimal/)
+### **GitHub:** [@SWATrock](https://github.com/SWATrock)
+
+---
+
+# ÍNDICE:
+
+### 1. What is a template?
+### 2. Create a template
+### 3. Documentation
+
+---
+
+## What is a template?
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/88261724/139181767-c83f1985-4a4b-4c94-8981-51e9f0a11def.png" width="300px">
+</p>
+
+Document or file that contains all the lines, proportions, sizes, typography, structure, colors and indications necessary that allows to orient, port or build, a predefined design or scheme.
+
+---
+
+## Create a template
+
+> The value in creating a custom commit template is that you can use it to remind yourself (or others) of the proper format and style when creating a commit message.
+
+- We open our terminal and check if there is no previously configured template in the current repository (You can leave out the `--global` flag if you only plan on using this template for a single, individual repo).
+
+```
+git config --global commit.template
+```
+
+- We create a hidden file with the format that our template will have.
+
+```
+touch .mytemplate
+```
+
+- We proceed to edit the `.mytemplate` file.
+
+```
+vim .mytemplate
+```
+
+---
+
+- In our case we will use the "_Conventional Commits v1.0.0_" format:
+
+```bash
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+- We set our new template created by default:
+
+```
+git config --global commit.template .mytemplate
+```
+
+- Ready, our template is configured. Now when you make a commit with the `git commit` command, it will display the format that we established.
+
+---
+
+## Documentation
+
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+[Using Git Commit Message Templates to Write Better Commit Messages](https://gist.github.com/lisawolderiksen/a7b99d94c92c6671181611be1641c733)
+
+[Create A Custom Git Commit Template](https://alex-wasik.medium.com/create-a-custom-git-commit-template-84468232a459)
+
+[Customizing Git - Git Configuration](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration)
+
+		</textarea>
+		<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+		<script>
+			var slideshow = remark.create();
+		</script>
+		<script></script>
+	</body>
+</html>
