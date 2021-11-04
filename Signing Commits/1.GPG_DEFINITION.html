@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Introduction to GnuPG</title>
+		<style>
+			body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1, h2, h3 {
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.remark-slide-content h1 { font-size: 3em; }
+.remark-slide-content h2 { font-size: 2em; }
+.remark-slide-content h3 { font-size: 1.6em; }
+.footnote {
+	position: absolute;
+	bottom: 3em;
+}
+li p { line-height: 1.25em; }
+.red { color: #fa0000; }
+.large { font-size: 2em; }
+a, a > code {
+	color: rgb(249, 38, 114);
+	text-decoration: none;
+}
+code {
+	background: none repeat scroll 0 0 #F8F8FF;
+  border: 1px solid #DEDEDE;
+  border-radius: 3px 	;
+  padding: 0 0.2em;
+}
+.remark-code, .remark-inline-code { font-family: "Bitstream Vera Sans Mono", "Courier", monospace; }
+.remark-code-line-highlighted     { background-color: #373832; }
+.pull-left {
+	float: left;
+	width: 47%;
+}
+.pull-right {
+	float: right;
+	width: 47%;
+}
+.pull-right ~ p {
+	clear: both;
+}
+#slideshow .slide .content code {
+	font-size: 0.8em;
+}
+#slideshow .slide .content pre code {
+	font-size: 0.9em;
+	padding: 15px;
+}
+.main-title, .title {
+	background: #272822;
+	color: #777872;
+	text-shadow: 0 0 20px #333;
+}
+.title h1, .title h2, .main-title h1, .main-title h2 {
+	color: #f3f3f3;
+	line-height: 0.8em;
+}
+/* Custom */
+.remark-code {
+	display: block;
+	padding: 0.5em;
+}
+
+		</style>
+	</head>
+	<body>
+		<textarea id="source">
+# Introduction to GnuPG
+
+### Git & GitHub Training - Club de Software EPN
+
+## Documentation
+* [The official page of GnuPG](https://gnupg.org/)  
+* [GnuPG ArchWiki](https://wiki.archlinux.org/title/GnuPG)
+
+## Author
+- [@cristoxdxd](https://www.github.com/cristoxdxd)
+
+---
+
+# What is _**GNU Privacy Guard**_?
+>Is an open source implementation of OpenPGP 
+
+![GnuPG logo](data:image/png;base64,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)
+
+![GPG_current_version](https://img.shields.io/badge/GPG-v2.2.32-orange)  
+The Universal Crypto Engine
+
+GPG allows you to encrypt and sign your data and communications.  
+Command line powerful tool used as the actual crypto backend of other applications.  
+
+---
+
+## How __GPG__ works?
+
+It works with public-key cryptography.   
+In a nutshell GnuPG creates a pair of files which contain your public and private keys.  
+As the name implies, the public key can be available to anyone and the private key needs to be kept in secret.  
+People will use your public key to encrypt data which only your private key will be able to decrypt.
+
+		</textarea>
+		<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+		<script>
+			var slideshow = remark.create();
+		</script>
+		<script></script>
+	</body>
+</html>

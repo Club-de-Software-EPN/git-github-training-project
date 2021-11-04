@@ -1,4 +1,5 @@
 # How to modify branches
+
 ### [Brian Coyago](https://github.com/Kanicbay) - Computer Science
 
 ## Introduction
@@ -51,6 +52,5 @@ Ir order to view how our branches are. We can use a git log using this.
 ```
 git log --oneline --graph --all
 ``` 
-
 <img src="https://mackyle.github.io/git-log-compact/image1.gif" width="750" height="400"/></img>
 
