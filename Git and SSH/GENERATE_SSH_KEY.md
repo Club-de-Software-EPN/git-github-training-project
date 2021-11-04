@@ -1,4 +1,9 @@
 # SSH KEY
+**Samir Zurita**
+
+![SSH](https://www.elblogdebart.com/wp-content/uploads/2019/04/ssh.jpg)
+
+---
 
 ### **GENERATE SSH KEY**
 
@@ -18,6 +23,8 @@ ssh-keygen -t ed25519 -C "email"
 4. Enter the passphrase that will serve as a password to access the SSH service. 
 
 5. After entering the safe phrase, the word SHA256 appears in the terminal, which will show us that our safe phrase was generated. 
+
+---
 
 ### **EVALUATE THE OPERATION OF THE SSH AGENT**
 
